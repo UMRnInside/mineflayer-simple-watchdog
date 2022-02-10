@@ -17,6 +17,7 @@ function inject(bot, { watchdogConfig }) {
     let running = false;
     let kickedSinceMs = 0;
     watchdog.start = async function() {
+        if (running) return;
         kickedSinceMs = getCurrentTimeMs();
         running = true;
         while (running) {
