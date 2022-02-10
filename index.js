@@ -10,9 +10,9 @@ function inject(bot, { watchdogConfig }) {
     let watchdog = {};
 
     watchdogConfig = watchdogConfig ?? {};
-    let watchdog.timeout = watchdogConfig.timeout ?? 30000;
-    let watchdog.checkInterval = watchdogConfig.checkInterval ?? 5000;
-    let watchdog.resetAction = watchdogConfig.resetAction ?? bot.quit;
+    watchdog.timeout = watchdogConfig.timeout ?? 30000;
+    watchdog.checkInterval = watchdogConfig.checkInterval ?? 5000;
+    watchdog.resetAction = watchdogConfig.resetAction ?? bot.quit;
 
     let running = false;
     let kickedSinceMs = 0;
