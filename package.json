@@ -1,0 +1,10 @@
+{
+    "name": "mineflayer-simple-watchdog",
+    "version": "0.0.1",
+    "description": "watchdog for mineflayer",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/UMRnInside/mineflayer-simple-watchdog.git"
+    },
+    "license": "MIT"
+}
