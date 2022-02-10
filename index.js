@@ -3,7 +3,7 @@ async function sleep(ms) {
 }
 
 function getCurrentTimeMs() {
-    return Math.floor(new Date().getTime() / 1000);
+    return new Date().getTime();
 }
 
 function inject(bot, { watchdogConfig }) {
